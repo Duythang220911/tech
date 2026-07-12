@@ -9,6 +9,100 @@
 
     -webkit-tap-highlight-color: transparent;
 }
+html {
+    background: #f8f0ed;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background: #f8f0ed;
+}
+
+.login-app {
+    position: relative;
+
+    width: 100%;
+    height: 100dvh;
+    min-height: 100dvh;
+
+    overflow: hidden;
+
+    background: #f8f0ed;
+}
+
+.login-background {
+    position: absolute;
+
+    top: calc(-1 * env(safe-area-inset-top));
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: calc(
+        100% + env(safe-area-inset-top)
+    );
+}
+
+.login-background img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center top;
+}
+.login-background {
+    position: absolute;
+
+    /*
+      Kéo nền lên phủ cả safe-area phía trên
+    */
+    top: calc(-1 * env(safe-area-inset-top));
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: calc(
+        100% + env(safe-area-inset-top)
+    );
+
+    overflow: hidden;
+}
+
+.login-background img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center top;
+}
+html,
+body {
+    margin: 0;
+    width: 100%;
+    min-height: 100%;
+    background: #f8f0ed;
+}
+
+body {
+    overflow: hidden;
+}
+
+.login-app {
+    position: relative;
+
+    width: 100%;
+    max-width: 430px;
+
+    height: 100dvh;
+    min-height: 100dvh;
+
+    overflow: hidden;
+
+    /* nền phủ cả vùng status bar */
+    background: #f8f0ed;
+}
 
 html,
 body {
@@ -217,7 +311,7 @@ img {
 
     width: calc(100% - 28px);
     height: 230px;
-    top: 410px;
+    top: 360px;
     margin: 0 auto;
 
     background: rgba(255, 255, 255, 0.88);
