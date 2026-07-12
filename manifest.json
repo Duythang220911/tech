@@ -5,8 +5,8 @@
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait",
-  "background_color": "#f4f5fa",
-  "theme_color": "#f4f5fa",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
   "icons": [
     {
       "src": "./img/images/pocket.png",
