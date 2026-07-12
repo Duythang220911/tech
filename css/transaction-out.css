@@ -1,5 +1,5 @@
 /* =========================
-   RESET
+   RESET + NỀN TRẮNG IOS
 ========================= */
 
 * {
@@ -14,10 +14,8 @@ html,
 body {
     width: 100%;
     min-height: 100%;
-}
 
-html {
-    background: #000000;
+    background: #ffffff;
 }
 
 body {
@@ -26,6 +24,9 @@ body {
 
     overflow: hidden;
 
+    color: #111111;
+    background: #ffffff;
+
     font-family:
         -apple-system,
         BlinkMacSystemFont,
@@ -33,11 +34,21 @@ body {
         "SF Pro Text",
         Arial,
         sans-serif;
-
-    color: #111111;
-    background: #000000;
 }
 
+.transaction-page {
+    position: relative;
+
+    width: 100%;
+    max-width: 430px;
+
+    height: 100dvh;
+    min-height: 100dvh;
+
+    overflow: hidden;
+
+    background: #ffffff;
+}
 button {
     border: 0;
     outline: 0;
@@ -68,7 +79,7 @@ button:active {
 
     overflow: hidden;
 
-    background: #000000;
+   
 }
 
 
@@ -76,36 +87,39 @@ button:active {
    NỀN PHÍA SAU
 ========================= */
 
-/* .top-background {
+.top-background {
     position: absolute;
+    z-index: 0;
+
     inset: 0 0 auto;
 
-    height:
-        calc(
-            88px +
-            env(safe-area-inset-top)
-        );
+    height: calc(
+        70px +
+        env(safe-area-inset-top)
+    );
 
-    background: #000000;
-} */
+    background: #ffffff;
+}
 
 .background-sheet {
     position: absolute;
+    z-index: 1;
 
-       top: calc(6px + env(safe-area-inset-top));
+    top: calc(
+        6px +
+        env(safe-area-inset-top)
+    );
+
     left: 17px;
     right: 17px;
 
     height: 90px;
 
-    border-radius:
-        18px
-        18px
-        0
-        0;
+    border-radius: 18px 18px 0 0;
 
-    background: #d9d9d9;
+    background: #eeeeee;
 }
+
 
 
 /* =========================
