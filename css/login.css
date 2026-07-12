@@ -310,7 +310,11 @@ img {
 
 
 
-
+.login-app,
+.login-background {
+    position: fixed;
+    inset: 0;
+}
 /* =========================
    PANEL
 ========================= */
